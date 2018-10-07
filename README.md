@@ -4,6 +4,7 @@ CSS to emulate the Workflowy document style in Dynalist
 Three steps to making Dynalist emulate Workflowy:
 
 1/ Just paste the CSS in custom.css in this repo into Dynalist (Dynalist Pro settings)
+
 2/ Change view preferences in settings:
  - theme = Default
  - density = Cozy
@@ -11,6 +12,7 @@ Three steps to making Dynalist emulate Workflowy:
  - font = system
  - narrow document layout = tick (this emulates Workflowy Classic)
  - document border = tick (this emulates Workflowy Classic)
+
 3/ Edit keyboard shortcuts:
  - Expand/Collapse = Ctrl+Space
  - Zoom in = Alt+Right
