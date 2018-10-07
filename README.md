@@ -1,11 +1,16 @@
-# dynalist-workflowy-emulation
-CSS to emulate the Workflowy document style in Dynalist
+# How to emulate Workflowy in Dynalist
 
-Three steps to making Dynalist emulate Workflowy:
+**Step 1 - Go Pro**
 
-1/ Just paste the CSS in custom.css in this repo into Dynalist (Dynalist Pro settings)
+Only Dynalist Pro allows you to use custom CSS or change keyboard shortcuts. But you can test this in the free trial.
 
-2/ Change view preferences in settings:
+**Step 2 - Copy CSS from here**
+
+Copy / paste the CSS in custom.css in this repo into Dynalist (Dynalist Pro settings)
+
+**Step 3 - Change view preferences**
+
+Change view preferences in Dynalist settings:
  - theme = Default
  - density = Cozy
  - font size = small
@@ -13,7 +18,9 @@ Three steps to making Dynalist emulate Workflowy:
  - narrow document layout = tick (this emulates Workflowy Classic)
  - document border = tick (this emulates Workflowy Classic)
 
-3/ Edit keyboard shortcuts:
+**Step 4 - Keyboard Shortcuts**
+
+Edit keyboard shortcuts:
  - Expand/Collapse = Ctrl+Space
  - Zoom in = Alt+Right
  - Zoom out = Alt+Left
