@@ -1,0 +1,78 @@
+/* Headings more like WF */
+
+.Node.is-currentRoot > .Node-self .node-line, .Node.is-currentRoot > .Node-self.is-heading .node-line, .Node.is-currentRoot > .Node-self .node-line-strict, .Node.is-currentRoot > .Node-self.is-heading .node-line-strict {
+    font-weight: 600;
+    font-size: 128%;
+    color: #444;
+}
+
+/***** Breadcrumbs - smaller and less visual impact *****/
+
+.DocumentBreadcrumb-item {
+    font-size: 0.75em;
+    color: #777;
+}
+
+.DocumentBreadcrumb-delimiter {
+    margin: 0 6px;
+    vertical-align: top;
+    font-size: 0.75em;
+    color: #777;
+    line-height:18px;
+}
+
+/* Override text colour and font */
+html, body {
+    color:#000000;
+}
+
+/***** Bullets like Workflowy *****/
+
+/* Non-expanded nodes */
+.Node-self.is-collapsed.is-parent > .Node-bullet:before {
+    content: "\e90d"; /* change bullet style */
+    background-color: #e0e0e0; /* background bullet colour */
+    color:#666; /* internal bullet colour */
+}
+
+/* Do same for expanded nodes */
+.AppContainer.is-using-bullet-to-zoom .Node-bullet:before {
+    background-color: transparent; /* i.e. same as ... */
+    color: #666; /* internal bullet colour */
+}
+
+
+/* Hover colours */
+.AppContainer.is-using-bullet-to-zoom .Node-bullet:hover:before {
+    background-color: #aaa;
+}
+
+.Node-self.is-collapsed.is-parent > .Node-bullet:hover:before {
+    content: "\e90d";
+    background-color: #aaa;
+}
+
+.Node-self.is-collapsed > .Node-bullet:hover:before {
+    content: "\e90a";
+    background-color: #aaa;
+}
+
+/* Size of bullet */
+.Node-bullet:before {
+    font-size:18.5px;
+}
+
+/* Reduce visual impact of date boxes */
+.node-inline-item {
+    background-color: #fdfdfd;
+}
+
+#image-preview-loader, #image-preview-fail, #inline-image-preview, .node-inline-item {
+    border: 1px solid #efefef;
+}
+
+/* favorite star */
+.node-icon.mod-bookmark:hover:before, .node-icon.mod-bookmark.is-alreadyBookmarked:before {
+    content: "\e929";
+    color:#f4c542;
+}
