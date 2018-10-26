@@ -31,6 +31,7 @@ html, body {
 /* Non-expanded nodes */
 .Node-self.is-collapsed.is-parent > .Node-bullet:before {
     content: "\e90d"; /* change bullet style */
+    border-radius: 50%; /* rounded background */
     background-color: #e0e0e0; /* background bullet colour */
     color:#666; /* internal bullet colour */
 }
