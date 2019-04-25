@@ -1,0 +1,105 @@
+/* Headings more like WF */
+
+.Node.is-currentRoot > .Node-self .node-line, .Node.is-currentRoot > .Node-self.is-heading .node-line, .Node.is-currentRoot > .Node-self .node-line-strict, .Node.is-currentRoot > .Node-self.is-heading .node-line-strict {
+    font-weight: 600;
+    font-size: 128%;
+    color: #rgb(217, 219, 219);
+}
+
+/***** Breadcrumbs - smaller and less visual impact *****/
+
+.DocumentBreadcrumb-item {
+    font-size: 0.75em;
+    color: #777;
+}
+
+.DocumentBreadcrumb-delimiter {
+    margin: 0 6px;
+    vertical-align: top;
+    font-size: 0.75em;
+    color: #777;
+    line-height:20px;
+}
+
+/* Override text colour and font */
+html, body {
+    color:#rgb(217, 219, 219);
+}
+
+.is-smallFont .Node-self.is-parent + .Node-children {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.Node-renderedContent, .Node-renderedNote {
+    padding-left:2px;
+}
+
+/***** Bullets like Workflowy *****/
+
+/* Non-expanded nodes */
+.Node-self.is-collapsed.is-parent > .Node-bullet:before {
+    content: "\e90d"; /* change bullet style */
+    border-radius: 50%; /* rounded background */
+    background-color: rgb(92, 96, 98); /* background bullet colour */
+    color:rgb(217, 219, 219); /* internal bullet colour */
+}
+
+/* Do same for expanded nodes */
+.AppContainer.is-using-bullet-to-zoom .Node-bullet:before {
+    background-color: transparent; /* i.e. same as ... */
+    color:rgb(217, 219, 219); /* internal bullet colour */
+}
+
+
+/* Hover colours */
+.AppContainer.is-using-bullet-to-zoom .Node-bullet:hover:before {
+    background-color: rgb(124, 127, 129);
+}
+
+.Node-self.is-collapsed.is-parent > .Node-bullet:hover:before {
+    content: "\e90d";
+    background-color: rgb(124, 127, 129);
+}
+
+.Node-self.is-collapsed > .Node-bullet:hover:before {
+    content: "\e90a";
+    background-color: rgb(124, 127, 129);
+}
+
+/* Size of bullet */
+
+
+.is-smallFont .Node-bullet {
+font-size: 20px;
+}
+
+.is-smallFont .Node-bullet:before {
+    font-size:20px;
+}
+
+/* Reduce visual impact of date boxes */
+.node-inline-item {
+    background-color: rgb(255, 255, 255, 0.05);
+    border: none !important;
+}
+
+/* Reduce visual impact of date boxes */
+a.node-inline-item:before {
+    color: #rgb(217, 219, 219);
+}
+
+#image-preview-loader, #image-preview-fail, #inline-image-preview, .node-inline-item {
+    border: 1px solid #efefef;
+}
+
+.node-displayed-image-link, .node-displayed-image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/* favorite star */
+.node-icon.mod-bookmark:hover:before, .node-icon.mod-bookmark.is-alreadyBookmarked:before {
+    content: "\e929";
+    color:#f4c542;
+}
